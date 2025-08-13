@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Enter some text">
+    <button onclick="getInputValue()">Submit</button>
+    <p
+    id="display"></p>
+    <script>
+        function getInputValue(){
+            //get the value of input field with id="myInput"
+            var inputValue = document.getElementById("myInput").value;
+
+            //display the value in ythe paragraph with id="display"
+            document.getElementById("display").innerText = "You entered: "+inputValue;
+        }
+    </script>
+</body>
+</html>
